@@ -248,6 +248,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;   /* ADD THIS */
   position: relative;
   background: var(--gradient-primary);
   overflow: hidden;
@@ -291,6 +292,7 @@ body {
   z-index: 2;
   position: relative;
   text-align: center;
+  justify-items: center;  /* ADD THIS */
 }
 
 .hero-text {
@@ -664,24 +666,26 @@ body {
   .hero-content {
     grid-template-columns: 1fr 1fr;
     text-align: left;
+    justify-items: center;   /* ADD THIS */
+    align-items: center;     /* already there */
   }
-  
+
   .hero-text {
     order: 1;
   }
-  
+
   .hero-image {
     order: 2;
   }
-  
+
   .hero-buttons {
     justify-content: flex-start;
   }
-  
+
   .social-links {
     justify-content: flex-start;
   }
-  
+
   .about-content {
     grid-template-columns: 1fr 1fr;
   }
